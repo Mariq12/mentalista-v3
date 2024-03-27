@@ -6,22 +6,23 @@ function iniciarJuego() {
     var rangoFin = document.getElementById("rangoFin").value;
 
     userName = userName.charAt(0).toUpperCase() + userName.slice(1);
-
-    mensaje.innerHTML = "";
-
+    // Crear los elementos del mensaje de confirmación
     var confirmacion = document.createElement("label");
     confirmacion.innerHTML = "¿Quieres jugar, " + userName + "? (s/n)";
     var botonSi = document.createElement("button");
     botonSi.innerHTML = "Sí";
     var botonNo = document.createElement("button");
     botonNo.innerHTML = "No";
-    mensaje.appendChild(confirmacion);
-    mensaje.appendChild(botonSi);
-    mensaje.appendChild(botonNo);
+    // Agregar los elementos al contenedor de mensajes
+    var conversionForm = document.querySelector(".conversion-form");
+    conversionForm.innerHTML = "";
+    conversionForm.appendChild(confirmacion);
+    conversionForm.appendChild(botonSi);
+    conversionForm.appendChild(botonNo);
 
     botonSi.addEventListener("click", function() {
         // Mostrar un saludo personalizado
-   alert("Hola, " + userName + "! Bienvenido al juego.");
+    alert("Hola, " + userName + "! Bienvenido al juego.");
 
         var maxIntentos = parseInt(numIntentos);
         var intentosRealizados = 0;

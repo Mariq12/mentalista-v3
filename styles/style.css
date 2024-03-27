@@ -40,7 +40,7 @@ img {
 .conversion-form {
   background-color: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente para que la imagen sea visible */
   padding: 10px;
-  border-radius: 10px 50px;
+  border-radius: 5px 55px;
   max-width: 500px; /* Establecer un ancho máximo para el formulario */
   margin: 0 auto;
   text-align: left;
@@ -84,7 +84,7 @@ input[type="text"],
 input[type="number"] {
   padding: 8px;
   border: none;
-  border-radius: 10px 3px;
+  border-radius: 15px 3px;
   width: 200px;
   box-sizing: border-box;
   margin-bottom: 5px;
@@ -92,14 +92,13 @@ input[type="number"] {
 }
 
 /* Estilos para el botón */
+/* Estilos para el botón */
 #iniciarJuegoButton {
-  background-color: #f99c0f;
+  background-color: #ffa100;
   color: white;
   padding: 10px 20px;
   border: none;
-  border-radius: 25px 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+  border-radius: 20px 4px;
   font-size: 16px; /* Tamaño de fuente */
   cursor: pointer; /* Cambiar cursor al pasar */
   display: block; /* Convertir a bloque para centrarlo horizontalmente */
