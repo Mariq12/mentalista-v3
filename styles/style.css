@@ -1,0 +1,130 @@
+body {
+  font-family: "Roboto Mono", monospace;
+  text-align: center;
+  background-image: url("https://caelum-online-public.s3.amazonaws.com/assets-imersaodev/background_mentalista.png");
+  background-color: #000000;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0; /* Eliminar margen predeterminado del cuerpo */
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+.page-title {
+  color: #ffffff;
+  margin: 0 0 5px;
+}
+
+.page-logo {
+  width: 170px;
+}
+
+.alura-latam-logo {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+img {
+  max-height: 500px;
+  padding: 10px;
+}
+
+/* Estilos para el formulario */
+.conversion-form {
+  background-color: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente para que la imagen sea visible */
+  padding: 10px;
+  border-radius: 10px 50px;
+  max-width: 500px; /* Establecer un ancho máximo para el formulario */
+  margin: 0 auto;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agregar sombra */
+  transition: box-shadow 0.3s; /* Agregar transición para la sombra */
+}
+
+/* Agregar efecto de sombra al pasar el cursor */
+.conversion-form:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.result-container {
+	color: white;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row; /* Cambio a fila */
+  margin-bottom: 10px;
+}
+
+/* Estilos para etiquetas y select */
+label {
+  color: white;
+  font-weight: bold; /* Texto en negrita */
+  margin-right: 10px; /* Espaciado a la derecha */
+  font-size: 16px;
+}
+
+input[type="text"]::placeholder,
+input[type="number"]::placeholder {
+  color: grey; /* Cambiar el color del marcador de posición a blanco */
+}
+
+input[type="text"],
+input[type="number"] {
+  padding: 8px;
+  border: none;
+  border-radius: 10px 3px;
+  width: 200px;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+  background-color: white rgba(255, 255, 255, 0.3);
+}
+
+/* Estilos para el botón */
+#iniciarJuegoButton {
+  background-color: #f99c0f;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 16px; /* Tamaño de fuente */
+  cursor: pointer; /* Cambiar cursor al pasar */
+  display: block; /* Convertir a bloque para centrarlo horizontalmente */
+  margin: auto ; /* Centrar horizontalmente */
+}
+
+#iniciarJuegoButton:hover {
+  background-color: #db8501;
+}
+
+
+footer {
+  text-align: center;
+  font-family: sans-serif;
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+footer p {
+  margin: 0;
+  padding: 20px 0;
+  background-color: black;
+  color: #fff;
+  height: 30px;
+}
